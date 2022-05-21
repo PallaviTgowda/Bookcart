@@ -1,0 +1,28 @@
+  <div class="card-wrapper" *ngFor="let details of data">
+    <mat-card class="example-card">
+      <img mat-card-image src="https://bookcart.azurewebsites.net/Upload/{{details.coverFileName}}" alt="No image available"
+      [routerLink]="['/bookdetails/'+details.bookId]" 
+      matTooltipClass="custom-tooltip">
+      <div class="favicon">
+        <button mat-icon-button>
+          <mat-icon class="change">favorite</mat-icon>
+        </button>
+      </div>
+        <mat-card-content>
+          <div><a [routerLink]="['/bookdetails/'+details.bookId]">{{details.title}}</a></div><br>
+          <div>{{details.price | currency:'INR'}}</div><br>
+          <button mat-flat-button color="primary" (click)="popup()">
+              <span class="material-icons">shopping_cart</span>Add to Cart</button>
+        </mat-card-content>
+        <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div>One item added to cart</div>
+                <div>
+                  <button class="button" (click)="closePopup()">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </mat-card>
+  </div>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { BookdetailsService } from './service/bookdetails.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bookcart';
+  router: any;
+
+  constructor(router:Router) {}
+
+  ngOnInit(): void {
+  }
 }

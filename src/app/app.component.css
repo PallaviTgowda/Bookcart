@@ -1,0 +1,10 @@
+.title-toolbar {
+    background: rgb(72, 46, 202);
+    position: sticky;
+    top:0px
+  }
+.btn{
+    background: rgb(72, 46, 202);
+    color: white;
+    font-size: 20px;
+}

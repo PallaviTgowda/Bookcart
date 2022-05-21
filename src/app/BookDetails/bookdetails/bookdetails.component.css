@@ -1,0 +1,50 @@
+.main{
+    width:1200px
+}
+.title-toolbar {
+    background: rgb(235, 61, 124);
+  }
+
+.title-spacer{
+    flex : 1 1 auto;
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.mat-success {
+    background-color: rgb(29, 163, 123);
+    color: #fff;
+    margin-left: 10px;
+}
+.material-icons{
+    font-size: 20px;
+}
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 200px;
+    vertical-align: center;
+}
+.mat-card-image{
+    width:220px;
+    height:260px;
+}
+.mat-icon-button{
+    color:grey;
+}
+.modal-content{
+    width:350px;
+    padding:14px;
+    background-color: rgb(58, 55, 55);
+    color: rgb(204, 191, 191);
+    font-size: 15px;
+    font-family:Arial
+}
+.button{
+    background-color: rgb(58, 55, 55);
+    color: rgb(221, 13, 48);
+    position: absolute;
+    right:5px;
+    top:6px;
+    border:0px
+}
