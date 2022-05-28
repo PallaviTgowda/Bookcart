@@ -22,5 +22,5 @@ getOne(id: any){
 getSimilarBook(id: any){
   return this.http.get('https://bookcart.azurewebsites.net/api/Book/GetSimilarBooks/'+id);
 } 
-
+ 
 }
